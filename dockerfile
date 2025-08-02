@@ -2,8 +2,7 @@
 FROM manjarolinux/darch-manjaro:latest
 
 
-# Update system and install a package (e.g., htop)
-RUN pacman -Syu --noconfirm && pacman -S --noconfirm htop
+
 RUN pacman -S curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 RUN zsh
 
