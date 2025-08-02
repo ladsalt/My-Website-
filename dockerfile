@@ -4,7 +4,7 @@ FROM manjarolinux/darch-manjaro:latest
 
 
 RUN pacman -S curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-RUN zsh
+RUN bash
 
 # set up everything for the website
 COPY src .
