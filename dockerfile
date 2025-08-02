@@ -4,6 +4,9 @@ FROM manjarolinux/darch-manjaro:latest
 
 
 RUN pacman -S curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+RUN pacman -S nodejs npm
+RUN npm install -g rust-just
+
 RUN bash
 
 # set up everything for the website
